@@ -41,7 +41,7 @@ function userOperate(canvas){
             let x = e.touch[0].clientX;
             let y = e.touch[0].clientY;
             firstPoint = {'x': x, 'y': y}
-            drawCircle(x, y, 0);
+            drawCircle(x, y, 5);
         }
         canvas.ontouchmove = function(e){
             if(painting){
