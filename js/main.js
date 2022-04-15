@@ -40,7 +40,7 @@ function userOperate(canvas){
             painting = true;
             let x = e.touchs[0].clientX;
             let y = e.touchs[0].clientY;
-            firstPoint = {'x': x, 'y': y}
+            firstPoint = {'x': x, 'y': y};
             drawCircle(x, y, 5);
         }
         canvas.ontouchmove = function(e){
