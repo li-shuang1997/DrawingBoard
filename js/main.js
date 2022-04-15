@@ -45,8 +45,8 @@ function userOperate(canvas){
         }
         canvas.ontouchmove = function(e){
             if(painting){
-                let x = e.touch[0].clientX;
-                let y = e.touch[0].clientY;
+                let x = e.touchs[0].clientX;
+                let y = e.touchs[0].clientY;
                 let newPoint = {'x':x, 'y':y};
                 drawLine(firstPoint.x, firstPoint.y, newPoint.x, newPoint.y);
                 firstPoint = newPoint;
