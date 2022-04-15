@@ -52,7 +52,7 @@ function userOperate(canvas){
                 firstPoint = newPoint;
             }
         }
-        canvas.ontouchmove = function(){
+        canvas.ontouchend = function(){
             painting = false;
         }
     }
