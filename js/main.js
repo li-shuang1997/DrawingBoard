@@ -38,8 +38,8 @@ function userOperate(canvas){
             this.firstData= ctx.getImageData(0, 0, canvas.width, canvas.height);
             saveData(this.firstData);
             painting = true;
-            let x = e.touch[0].clientX;
-            let y = e.touch[0].clientY;
+            let x = e.touchs[0].clientX;
+            let y = e.touchs[0].clientY;
             firstPoint = {'x': x, 'y': y}
             drawCircle(x, y, 5);
         }
